@@ -1,7 +1,5 @@
 {
     "display": "standalone",
-    "gcm_sender_id": "933227954654",
-    "gcm_user_visible_only": true,
     "icons": [{
             "density": 0.75,
             "sizes": "36x36",
@@ -43,8 +41,8 @@
             "sizes": "192x192"
         }
     ],
-    "name": "S7.ru",
+    "name": "S7 test",
     "prefer_related_applications": false,
-    "short_name": "S7.ru",
+    "short_name": "S7 test",
     "start_url": "/"
 }
