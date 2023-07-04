@@ -9,8 +9,12 @@
 </head>
 
 <body>
+  <h1 id="userId">Loading...</h1>
   <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
-  <script>
+  <script defer>
+
+    var userId = null;
+
     window.OneSignal = window.OneSignal || [];
     OneSignal.push(function () {
       OneSignal.init({
@@ -23,6 +27,21 @@
       });
       OneSignal.showNativePrompt();
     });
+
+    function updateUserId() {
+      if (userId) {
+        return;
+      }
+      OneSignal.getUserId()
+        .then((id) => {
+          userId = id
+          console.log(userId)
+          document.getElementById('userId').innerText = `User id: ${userId}`
+        })
+        .catch(console.log)
+    }
+
+    setInterval(updateUserId, 1000)
   </script>
 </body>
 
