@@ -1,6 +1,50 @@
-{   "$schema": "https://json.schemastore.org/web-manifest-combined.json",
+{
     "display": "standalone",
-    "start_url": "/",
-    "name": "OneSignal Manifest Example",
-    "short_name": "OS Manifest"
+    "gcm_sender_id": "933227954654",
+    "gcm_user_visible_only": true,
+    "icons": [{
+            "density": 0.75,
+            "sizes": "36x36",
+            "src": "https://portal.s7cdn.online/favicons/android-icon-36x36.png",
+            "type": "image/png"
+        },
+        {
+            "density": 1,
+            "sizes": "48x48",
+            "src": "https://portal.s7cdn.online/favicons/android-icon-48x48.png",
+            "type": "image/png"
+        },
+        {
+            "density": 1.5,
+            "sizes": "72x72",
+            "src": "https://portal.s7cdn.online/favicons/android-icon-72x72.png",
+            "type": "image/png"
+        },
+        {
+            "density": 2,
+            "sizes": "96x96",
+            "src": "https://portal.s7cdn.online/favicons/android-icon-96x96.png",
+            "type": "image/png"
+        },
+        {
+            "density": 3,
+            "sizes": "144x144",
+            "src": "https://portal.s7cdn.online/favicons/android-icon-144x144.png",
+            "type": "image/png"
+        },
+        {
+            "density": 4,
+            "sizes": "192x192",
+            "src": "https://portal.s7cdn.online/favicons/android-icon-192x192.png",
+            "type": "image/png"
+        },
+        {
+            "src": "http://assets.flocktory.com/uploads/cabinet_image/6abc2f6f-0d16-4a7a-9648-38f072705a73_logotype.jpg",
+            "sizes": "192x192"
+        }
+    ],
+    "name": "S7.ru",
+    "prefer_related_applications": false,
+    "short_name": "S7.ru",
+    "start_url": "/"
 }
